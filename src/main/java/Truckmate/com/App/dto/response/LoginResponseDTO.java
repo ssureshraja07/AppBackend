@@ -1,10 +1,10 @@
 package Truckmate.com.App.dto.response;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
 
 @Data
 @AllArgsConstructor
-
 public class LoginResponseDTO {
 
     private boolean success;
@@ -12,4 +12,8 @@ public class LoginResponseDTO {
     private String message;
 
     private boolean profileCompleted;
+
+    private String token;
+
+    private Long userId;
 }

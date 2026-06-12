@@ -39,7 +39,7 @@ public class PostServiceImpl
     ) {
 
         Optional<User> userOptional =
-                userRepository.findByUserMobile(
+                userRepository.findByMobileNumber(
                         request.getUserMobile()
                 );
 
